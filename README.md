@@ -1,23 +1,21 @@
-# Hello world JavaScript action
-
-This action prints "Hello World" or "Hello" + the name of a person to greet to the log. To learn how this action was built, see "[Creating a JavaScript action](https://help.github.com/en/articles/creating-a-javascript-action)" in the GitHub Help documentation.
+# Environment action
 
 ## Inputs
 
-### `who-to-greet`
+### `environment`
 
-**Required** The name of the person to greet. Default `"World"`.
+**Required** The environment name on github setting
 
 ## Outputs
 
-### `time`
+### `report`
 
-The time we greeted you.
+Report
 
 ## Example usage
 
 ```yaml
-uses: actions/hello-world-javascript-action@main
+uses: actions/environment
 with:
-  who-to-greet: 'Mona the Octocat'
+  environment: 'stage'
 ```
