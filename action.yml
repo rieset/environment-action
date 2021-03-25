@@ -1,12 +1,11 @@
-name: 'Hello World'
-description: 'Greet someone and record the time'
+name: 'environment'
+description: 'Use environment and pass secrets as env'
 inputs:
-  who-to-greet:  # id of input
-    description: 'Who to greet'
+  environment:
+    description: 'Environment name'
     required: true
-    default: 'World'
 outputs:
-  time: # id of output
+  report:
     description: 'The time we greeted you'
 runs:
   using: 'node12'
